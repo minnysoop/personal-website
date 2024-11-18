@@ -18,6 +18,7 @@ import { HeaderComponent } from './header/header.component'
       margin-right: auto;
       width: 70vw;
       line-height: 1.5;
+      letter-spacing: 0.07em;
     }
   `
 })

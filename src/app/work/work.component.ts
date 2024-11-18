@@ -18,13 +18,12 @@ import { Card } from '../types/card'
   `,
   styles: `
     .card {
-      background-color: #f4f4f4;
-      border-radius: 8px; 
+      background: #f0ece2;
+      border-radius: 8px;
+      padding: 10px;
       display: flex;
       justify-content: space-between; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 16px;
-      margin: 10px;
+      margin-bottom: 25px;
       min-width: 100%;
       flex-wrap: wrap;
       flex-direction: row;
@@ -36,7 +35,7 @@ import { Card } from '../types/card'
     }
 
     .card-content h2 {
-      font-size: 1.2rem; 
+      font-size: 1rem; 
       margin: 0; 
       font-weight: bold;
     }
@@ -46,28 +45,54 @@ import { Card } from '../types/card'
     .card-content a:hover {color: gray;}
 
     .card-content p {
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: #555;
       margin: 0;
     }
 
     .card-image {
       margin-right: 1.2em;
-      max-width: 150px;
+      max-width: 200px;
       height: auto; 
       flex-shrink: 0;
-      object-fit: cover; 
+      object-fit: cover;
       border-radius: 8px;
     }
 
-    
+    @media (max-width: 650px) {
+      .card {
+        flex-direction: column;
+      }
+
+      .card-content {
+        margin-right: 0;
+      }
+
+      .card-image {
+        margin-right: 0;
+        margin-bottom: 0.2em;
+        max-width: 100%;
+      }
+    }
   `
 })
 export class WorkComponent {
   works: Card[] = [
     {
       title: "project 1",
-      description: "project used for this and that",
+      description: "project used for this and that. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: {
+        ariaText: "aria text and such",
+        url: "https://placehold.co/600x400"
+      },
+      link: {
+        path: "https://www.google.com/",
+        title: "View"
+      }
+    },
+    {
+      title: "project 2",
+      description: "project used for this and that. project used for this and that. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       image: {
         ariaText: "aria text and such",
         url: "https://placehold.co/600x400"
