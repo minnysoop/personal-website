@@ -30,7 +30,7 @@ import { HeaderComponent } from './header/header.component'
 
     @media(max-width: 600px) {
       main {
-        width: fit-content;
+        width: 90vw;
       }
     }
   `

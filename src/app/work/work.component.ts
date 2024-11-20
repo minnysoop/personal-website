@@ -78,29 +78,17 @@ import { Card } from '../types/card'
 })
 export class WorkComponent {
   works: Card[] = [
-    {
-      title: "project 1",
-      description: "project used for this and that. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      image: {
-        ariaText: "aria text and such",
-        url: "https://placehold.co/600x400"
-      },
-      link: {
-        path: "https://www.google.com/",
-        title: "View"
-      }
-    },
-    {
-      title: "project 2",
-      description: "project used for this and that. project used for this and that. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      image: {
-        ariaText: "aria text and such",
-        url: "https://placehold.co/600x400"
-      },
-      link: {
-        path: "https://www.google.com/",
-        title: "View"
-      }
-    }
+    // {
+    //   title: "project 1",
+    //   description: "project used for this and that. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    //   image: {
+    //     ariaText: "aria text and such",
+    //     url: "https://placehold.co/600x400"
+    //   },
+    //   link: {
+    //     path: "https://www.google.com/",
+    //     title: "View"
+    //   }
+    // },
   ]
 }
