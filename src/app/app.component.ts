@@ -14,11 +14,24 @@ import { HeaderComponent } from './header/header.component'
   `,
   styles: `
     main {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70vw;
       line-height: 1.5;
+      width: 50vw;
+      margin: 0 auto;
       letter-spacing: 0.07em;
+      padding: 30px 30px;
+    }
+
+    @media (max-width: 840px) {
+      main {
+        width: 70vw;
+      }
+      
+    }
+
+    @media(max-width: 600px) {
+      main {
+        width: fit-content;
+      }
     }
   `
 })

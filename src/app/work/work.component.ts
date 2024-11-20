@@ -52,14 +52,14 @@ import { Card } from '../types/card'
 
     .card-image {
       margin-right: 1.2em;
-      max-width: 200px;
-      height: auto; 
+      max-height: auto;
+      max-width: 150px;
       flex-shrink: 0;
       object-fit: cover;
       border-radius: 8px;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 950px) {
       .card {
         flex-direction: column;
       }
