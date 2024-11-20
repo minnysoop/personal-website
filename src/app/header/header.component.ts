@@ -24,6 +24,8 @@ import { Link } from '../types/link'
       justify-content: space-between;
     }
 
+    a {color: black;}
+
     a:visited {color: black;}
     a:hover {color: gray;}
     p {font-size: 1.2em;}
