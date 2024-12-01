@@ -15,10 +15,11 @@ import { HeaderComponent } from './header/header.component'
   styles: `
     main {
       line-height: 1.5;
-      width: 50vw;
+      width: 65vw;
       margin: 0 auto;
-      letter-spacing: 0.07em;
+      letter-spacing: 0.02em;
       padding: 30px 30px;
+      font-size: 17px;
     }
 
     @media (max-width: 840px) {
